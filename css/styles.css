@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+section {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+section.is-primary {
+    background-color: #0520FD;
+    color: #05fdd2;
+    color: #fff;
+}
+
+section.is-secondary {
+    background-color: #0557E3
+}
+
+section.is-tertiary {
+    background-color: #11A5FA
+}
+section.is-quaternary {
+    background-color: #05cce3
+}
+section.is-quinary {
+    background-color: #05fdd2
+}
+i {
+    height:2rem;
+    width: 2rem;
+    background-color: #fff;
+    border-radius: 75%;
+}
+.main__work {
+    display: flex
+}
+
+img {
+    margin: 1rem;
+}
+
+.minor {
+    font-size: 12px;
+}
+
+.main__education-container > div {
+    margin: 1rem 0;
+}
+
+.main__interests-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 0;
+}
+.main__interests-container>div {
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+	'introduction work'
+	'introduction education'
+	'introduction interests'
+	'introduction skills'
+	'footer footer'
+    ;
+}
+
+@media (min-width: 40rem) {
+    body {
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	    'introduction introduction'
+	    'work education'
+	    'interests skills'
+	    'footer footer'
+	;
+    }
+}
+@media (min-width: 60rem) {
+    body {
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	    'introduction'
+	    'work'
+	    'education'
+	    'interests'
+	    'skills'
+	    'footer'
+	;
+    }
+}
+
+.introduction { grid-area: introduction }
+.work { grid-area: work }
+.education { grid-area: education }
+.interests { grid-area: interests }
+.skills { grid-area: skills }
+.footer { grid-area: footer }
