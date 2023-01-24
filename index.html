@@ -1,165 +1,259 @@
-<!DOCTYPE html PUBLIC>
-<html>
-  <head>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
-  </head>
-  <body>
-    <section class="introduction is-primary">
-      <h1>Hello</h1>
-      <div> Hi, I'm Nick.</div>
-    </section>
-    <section class="work is-secondary">
-      <h1>Work</h1>
-      <div>I've had the pleasure of working with some of the most recognized companies in the United States and the world.</div>
-      <div class="main__work">
-	<div>
-	  <img src="img/IBM.png"><i class="fa-sharp fa-solid fa-computer"></i>
+</head>
 
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-	  <img src="img/JDSU.png"><i class="fa-solid fa-ethernet"></i>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Nick Klosterman</h1>
+            <h2>Software Engineer</h2>
+            <a href="NickKlostermanResume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
+        <div id="lead-overlay"></div>
 
-	  <img src="img/Siemens.png"><i class="fa-regular fa-bolt"></i>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                  <p>
+		                I'm a human that enjoys being away from the computer as much as sitting at the computer building things. I enjoy running, cycling, rafting, and flying when the skies are blue. I enjoy building small gadgets and working on large websites. I've built small data displays using Raspberry Pis with e-Ink and LED screens. I've built large interactive websites for data display and data exploration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-	</div>
-	<div>
-	  <img src="img/Intelligrated.png"><i class="fa-solid fa-conveyor-belt-boxes"></i>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="2016 – Present">
+                <h3><a href="https://www.chase.com/">JP Morgan Chase &amp; Co.</a></h3>
+                <h4>Software Developer</h4>
+                <p>
+                  Currently implementing various features for the <a href="https://www.chase.com/personal/mortgage/myhomedashboard">Chase My Home</a> experience. Realizing Figma designs using an in-house Bootstrap derivative CSS framework and accompanying component library.
+                </p>
+            </div>
 
+            <div data-date="2015 – 2016">
+                <h3><a href="https://www.lb.com/">L Brands</a> - <a href="https://www.victoriassecret.com/us/">Victoria's Secret</a></h3>
+                <h4>Front End Developer</h4>
+                <p>
+                  Implemented improved pinned filter functionality. Delivered Lovelist, a personal pinboard of liked items, as part of the personalization initiative.
+                </p>
+            </div>
 
-	  <img src="img/VictoriasSecret.png"><i class="fa-regular fa-venus"></i>
+            <div data-date=" 2012 –  2015">
+                <h3><a href="https://careers.honeywell.com/us/en/campaign-igs">Honeywell</a> - <a href="https://careers.honeywell.com/us/en/campaign-igs">Intelligrated</a></h3>
+                <h4>Software Engineer</h4>
+                <p>
+                    Implemented desktop .NET conveyor control software application in JavaScript utilizing KendoUI.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Purdue University</h3>
+            <h4>Master of Science in Electrical &amp; Computer Engineering</h4>
+            <p>
+              Graduate researcher in the <a href="https://engineering.purdue.edu/Engr/Research/LabsFacilities/Archive/PURPL">Purdue University Rendering &amp; Perceptualization Lab (PURPL)</a>. Explored visualization techniques of large scale datasets. Collaborated with Dr Lasher-Trapp's group in the Department of Earth, Atmospheric and Planetary Sciences at Purdue University to provide a 3D model of atmospheric cloud data.</p>
+	          <br><p>  Graduate researcher in the <a href="https://engineering.purdue.edu/PURVAC/">Purdue University Regional Visualization and Analytics Center (PURVAC)</a>. Developed visual analytic environments for data discovery using homeland security data sets. 
+            </p>
+        </div>
+        <!-- End .education-block -->
 
-	  <img src="img/JPMorganChase.png"><i class="fa-regular fa-piggy-bank"></i>
+        <div class="education-block">
+            <h3>University of Illinois at Urbana-Champaign</h3>
+            <span class="education-date"></span>
+            <h4>Bachelor of Science in Electrical Engineering</h4>
+            <ul>
+                <li>
+                  Minor in Mathematics.
+                </li>
+                <li>
+                  A few credits short of a minor in Computer Science.
+                </li>
+                <li>
+                  Studied abroad in Turkey
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ReactPortfolioVisualizer.webp" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Portfolio Visualizer</h3>
+                        <p>
+                          React application to view and visualize performance of stock portfolios. Yahoo Finance API integration for live stock quotes. Features import and export of portfolio data as well tracking of open orders. Interactive performance plots executed in D3.js.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-	</div>
-      </div>
-    </section>
-    <section class="education is-tertiary">
-      <h1> <i class="fa-sharp fa-solid fa-building-columns"></i>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img style="height: 300px" src="images/gweled.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Gweled Solver</h3>
+                        <p>
+                          Wrote program to automatically read <a href="https://gweled.org/">Gweled</a> gameboard and find optimal move. Written in C &amp; C++.
+                        </p>
+                        <a href="https://github.com/nickklosterman/gweledsolver">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
 
-	Education <i class="fa-sharp fa-solid fa-building-columns"></i>
-      </h1>
-      <div> I've had the privilege to attend some of the best universities the world has to offer.</div>
-      <div>Map showing locations</div>
-      <div class="main__education-container">
-      <div>
-	<div>UIUC </div>
-	<div class="minor">BSEE <i class="fa-sharp fa-solid fa-graduation-cap"></i></div>
-      </div>
-      <div>
-	<div>Orta Doğu Teknik Üniversitesi </div>
-	<div class="minor">  Study Abroad</div>
-      </div>
-      <div>
-	<div>Purdue University </div>
-	<div class="minor">  MSEE <i class="fa-sharp fa-solid fa-graduation-cap"></i></div>
-      </div>
-      <div>
-	<div>Boğaziçi Üniversitesi</div>
-	<div class="minor">  Study Abroad</div>
-      </div>
-      </div>
-    </section>
-    <section class="interests is-quaternary">
-      <h1>Interests</h1>
-      <div>I have wide and varied interests that include</div>
-      <div class="main__interests-container">
-	<div>Drawing</div>
-	<div>Running</div>
-	<div>Cycling</div>
-	<div>Flying</div>
-	<div>Leatherworking</div>
-	<div>Raspberry Pis</div>
-	<div>Linux</div>
-	<div>Reading</div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-      </div>
-    </section>
-    <section class="skills is-quinary">
-      <div></div>
-      <div>I have used various tech stacks throughout my career. I've mainly worked on custom frameworks put together off of popular frameworks.</div>
-      <div class="main__interests-container">
-	<div>
-	  <div>JavaScript<i class="fa-brands fa-js"></i> </div>
-	  <div>ES6</div>
-	  <div>Typescript</div>
-	  <div>JSON</div>
-	  <div>React <i class="fa-brands fa-react"></i>
-	</div>
-	<div>
-	  <div> HTML <i class="fa-brands fa-html5"></i>
-</div>
-	  <div>Semantic HTML</div>
-	</div>
-	<div>
-	  <div>CSS <i class="fa-brands fa-css3-alt"></i>
+    <div id="skills">
+      <h2 class="heading">Skills</h2>
+      <!-- seems more like a bunch of stupid buzzwords that no one will pay attention to. Since everyone has these 'skills' they aren't believed. Buzzword bingo: kpi t-shaped AWS TDD Ask Customer-focused -->
+        <ul>
+          <li>JavaScript</li>
+	        <li>HTML5</li>
+	        <li>CSS3</li>
+	        <li>Python</li>
+          <li>Linux</li>
+	        <li>Bash</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
- <i class="fa-brands fa-css3"></i>
+    <div id="contact">
+      <!--
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
 
-</div>
-	  <div>Libraries - Bootstrap</div>
-	  <div>Preprocessors - SASS<i class="fa-brands fa-sass"></i>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> Nick Klosterman
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/nickklosterman" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 
-, LESS<i class="fa-brands fa-less"></i>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
 
-</div>
-	  <div>mobile first responseive design</div>
-	  <div>BEM</div>
-	</div>
-	<div>NPM</div>
-	<div>Babel</div>
-	<div>E2E</div>
-	<div>
-	  <div>Unit Testing</div>
-	  <div>Jasmine, Karma Mocha</div>
-	  <div>RTL</div>
-	</div>
-	<div>WCAG 2.0</div>
-	<div>Custom Frameworks</div>
-	<div>Libraries - React, Styled Components, KendoUI, MaterialUI </div>
-	<div>Node<i class="fa-brands fa-node-js"></i>
-
-	  <i class="fa-brands fa-node"></i>
-	  <i class="fa-solid fa-meteor"></i>
-
- - Rest / CRUD</div>
-	<div>
-	  <div>
-	    Databases	  <i class="fa-solid fa-database"></i>
-	  </div>
-	  <div>MySQL</div>
-	  <div> MariaDBL</div>
-	  <div> GraphQL</div>
-	  <div> MongoDB </div>
-	</div>
-	<div>Custom design and component systems / libraries</div>
-	<div>Agile workplace</div>
-	<div>JIRA COnfluence Git VSCode</div>
-	<div>CI/CD pipelines - Jules Jenkins</div>
-	<div>shell scripting, python d3 BEM analytics-AEM, </div>
-      </div>      
-	<i class="fa-solid fa-github"></i>
-      </section>
-    <section class="footer is-primary">
-      <footer>socialmedia icons</footer>
-      </section>
-  </body>
 </html>
-sketch.com
-fontawesome.com
-shape.so
-angle.sh
-https://developer.apple.com/fonts/
-https://fonts.google.com/
-https://github.com/hamza-mirza/react-weather-app impressive README
-reddit starting salary
-https://www.reddit.com/r/cscareerquestions/
-bitbucket io page
-github io page
-design for developers
